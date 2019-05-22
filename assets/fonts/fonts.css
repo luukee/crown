@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'GothamBook';
+    src: url('GothamBook.eot?#iefix') format('embedded-opentype'),
+    url('GothamBook.woff') format('woff'),
+    url('GothamBook.ttf')  format('truetype'),
+    url('GothamBook.svg#GothamBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src:url('GothamBold.eot?#iefix') format('embedded-opentype'),
+    url('GothamBold.woff') format('woff'),
+    url('GothamBold.ttf')  format('truetype'),
+    url('GothamBold.svg#GothamBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('GothamLight.eot?#iefix') format('embedded-opentype'),
+    url('GothamLight.woff') format('woff'),
+    url('GothamLight.ttf')  format('truetype'),
+    url('GothamLight.svg#GothamLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('GothamMedium.eot?#iefix') format('embedded-opentype'),
+    url('GothamMedium.woff') format('woff'),
+    url('GothamMedium.ttf')  format('truetype'),
+    url('GothamMedium.svg#GothamMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VitesseBook';
+    src: url('VitesseBook.eot');
+    src: url('VitesseBook.eot') format('embedded-opentype'),
+         url('VitesseBook.woff2') format('woff2'),
+         url('VitesseBook.woff') format('woff'),
+         url('VitesseBook.ttf') format('truetype'),
+         url('VitesseBook.svg#VitesseBook') format('svg');
+}
+
+@font-face {
+    font-family: 'VitesseSansLight';
+    src: url('VitesseSansLight.eot');
+    src: url('VitesseSansLight.eot') format('embedded-opentype'),
+         url('VitesseSansLight.woff2') format('woff2'),
+         url('VitesseSansLight.woff') format('woff'),
+         url('VitesseSansLight.ttf') format('truetype'),
+         url('VitesseSansLight.svg#VitesseSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VitesseMedium';
+    src: url('VitesseMedium.eot');
+    src: url('VitesseMedium.eot') format('embedded-opentype'),
+         url('VitesseMedium.woff2') format('woff2'),
+         url('VitesseMedium.woff') format('woff'),
+         url('VitesseMedium.ttf') format('truetype'),
+         url('VitesseMedium.svg#VitesseMedium') format('svg');
+}
+@font-face {
+    font-family: 'VitesseBold';
+    src: url('VitesseBold.eot');
+    src: url('VitesseBold.eot') format('embedded-opentype'),
+         url('VitesseBold.woff2') format('woff2'),
+         url('VitesseBold.woff') format('woff'),
+         url('VitesseBold.ttf') format('truetype'),
+         url('VitesseBold.svg#VitesseBold') format('svg');
+}

@@ -16,7 +16,7 @@ get_header();
 					<?php } ?>
                     <?php if(get_field('top_title_text')) {?>
                         <p><?php the_field('top_title_text'); ?></p>
-                    <?php 
+                    <?php
                     }
                     if(get_field('fine_print')){
                         echo '<p class="fine-print">'.get_field('fine_print').'</p>';
@@ -32,9 +32,15 @@ get_header();
             <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <ul class="team-filter">
-                        <li class="<?php the_field('all_teams'); ?>"><a href="#" data-filter="all">ALL TEAMS</a></li>
-                        <li class="<?php the_field('western_division'); ?>"><a href="#" data-filter="western-division">WESTERN DIVISION</a></li>
-                        <li class="<?php the_field('eastern_division'); ?>"><a href="#" data-filter="eastern-division">EASTERN DIVISION</a></li>
+                        <li class="<?php the_field('all_teams'); ?>">
+                            <a href="#" data-filter="all">ALL TEAMS</a>
+                        </li>
+                        <li class="<?php the_field('western_division'); ?>">
+                            <a href="#" data-filter="western-division">WESTERN DIVISION</a>
+                        </li>
+                        <li class="<?php the_field('eastern_division'); ?>">
+                            <a href="#" data-filter="eastern-division">EASTERN DIVISION</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-12 col-xs-12">
@@ -58,6 +64,7 @@ get_header();
                                 $modalId = 'pre-register';
                                 $comingSoon = get_field('team_coming_soon');
                                 $team_button = get_field('team_button');
+                                $helmet_link = get_field('helmet_link');
                                 $team_badge_image = get_field('team_badge_image');
                                 $team_badge_class = '';
                                 if($preRegisterCode){
@@ -72,7 +79,14 @@ get_header();
                                 }
                                 ?>
 
-                                <img<?php echo $team_badge_class; ?> src="<?php echo $team_badge_image; ?>" alt="<?php the_title(); ?>">
+                                <?php if ($helmet_link){ ?>
+                                    <a href="<?php echo get_permalink(); ?>">
+                                        <img<?php echo $team_badge_class; ?> src="<?php echo $team_badge_image; ?>" alt="<?php the_title(); ?>">
+                                    </a>
+                                <?php } else { ?>
+                                    <img<?php echo $team_badge_class; ?> src="<?php echo $team_badge_image; ?>" alt="<?php the_title(); ?>">
+                                <?php } ?>
+
                                 <?php
                                 if (!$comingSoon) {
                                     // REAL TEAM ?>
@@ -100,7 +114,7 @@ get_header();
                             if ( ($team_button === 'preregister' || $team_button === 'custom') && $preRegisterCode){ ?>
                                 <div id="<?php echo $modalId; ?>" class="modal-form" style="display:none;">
                                     <h1>
-                                        <?php 
+                                        <?php
                                         if($team_button === 'preregister'){
                                             echo "Pre-Register";
                                         }
